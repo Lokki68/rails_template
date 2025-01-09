@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version
+ruby-3.3.2
 
-Things you may want to cover:
+## Database
+```bash
+cp database.example.yml ./config/database.yml
+rails db:create db:migrate
+```
 
-* Ruby version
+## Env
+```bash
+cp .env.example .env
+```
 
-* System dependencies
+## Config
+modification module name `./config/application.rb` `l.23`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Bundle
+```bash
+bundle install
+```
