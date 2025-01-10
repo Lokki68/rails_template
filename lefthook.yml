@@ -3,8 +3,8 @@ pre-commit:
   commands:
     # specs:
       # run: rspec
-    # security:
-    #   run: brakeman --no-pager --ignore-model-output --except CheckRender
+    security:
+      run: brakeman --no-pager --ignore-model-output --except CheckRender
     # bundler-audit:
       # run: bundle exec bundler-audit
     rubocop_autocorrect:
@@ -12,4 +12,4 @@ pre-commit:
       run: bundle exec rubocop -A
     rubocop:
       tags: rubocop
-      run: bundle exec rubocop
+
