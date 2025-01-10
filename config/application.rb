@@ -37,7 +37,7 @@ module RailsTemplate
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     if Rails.env.development? || Rails.env.test?
-      Dotenv::Railtie.load
+      Dotenv::Rails.load
     end
 
     # Don't generate system test files.
