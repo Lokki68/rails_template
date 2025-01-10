@@ -30,9 +30,9 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 gem 'bootsnap', require: false
 
 group :development, :test do
+  gem 'brakeman', require: false
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
   gem 'dotenv-rails'
-  gem 'brakeman', require: false
 
   gem 'rubocop-rails-omakase', require: false
 end

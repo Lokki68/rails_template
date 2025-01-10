@@ -6,7 +6,7 @@ pre-commit:
     # security:
     #   run: brakeman --no-pager --ignore-model-output --except CheckRender
     # bundler-audit:
-    #   run: bundle exec bundler-audit
+      # run: bundle exec bundler-audit
     rubocop_autocorrect:
       tags: rubocop correct
       run: bundle exec rubocop -A
